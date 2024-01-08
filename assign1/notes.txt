@@ -1,0 +1,47 @@
+1. which sh --> /usr/bin/sh
+   which sleep --> /usr/local/cs/bin/sleep
+   which type --> /usr/bin/type
+
+2.
+ls -a /usr/bin > bin_commands.txt
+grep -E ^se.{1}$ bin_commands.txt
+Results:
+man sed --> stream editor for filtering and transforming text
+man seq --> print a sequence of numbers
+
+3. man ls --> ls -l /usr/local/cs/bin/emacs
+Result: /usr/local/cs/emacs-29.1/bin/emacs-29.1
+
+4. plain gcc --> /usr/local/cs/bin/gcc --> gcc --version --> 13.2.0
+   other  /usr/bin/gcc --version --> 8.5.0
+   These are different as they have different version numbers.
+
+5. u+sx --> man chmod --> user granted permissions, indicated by the +, setting the user ID(s) and to be able to execute the file(x)
+   o-w --> others(o) permission removed to write(w) to the file
+   I did man chmod to find how the different ways you could change permission of the file/
+
+6.  find /usr/local/cs -type d -cnewer /usr/local/cs/lib | sort
+Answers:
+/usr/local/cs
+/usr/local/cs/bin
+/usr/local/cs/bin/.del
+/usr/local/cs/coreutils-9.4
+/usr/local/cs/coreutils-9.4/bin
+
+7. find /usr/local/cs/src/python/Python-* -type f | wc --> 4457 lines
+
+8. find /usr/local/cs/bin -type l | wc -> 373
+
+9. ls -lt /usr/lib64 --> 15 Aug 12  2018 libbz2.so.1 -> libbz2.so.1.0.6
+
+10. C-h a transpose --> 4 commands have transpose in their name
+    C-t: transpose-chars
+    C-x C-t: transpose-lines
+    M-x Ret: transpose-paragraphs
+    M-x ret: transpose-regions 
+
+11. Yank - the last thing killed in to the buffer --> Command: C-y - similar to pasting
+12. ps -ef | grep $$ --> shows all processes containing my login PID
+PID = 2875452
+Parents = 2875448
+Children = 2877207 & 2877208

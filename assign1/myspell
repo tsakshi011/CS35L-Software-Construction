@@ -1,0 +1,4 @@
+#!/bin/bash
+./makedict < ./linux.words > my.words
+tr -cs 'A-Za-z' '[\n*]' <  my.words | sort -u > sort.words
+tr -cs 'A-za-z' '[\n*]' < "$1" | sort -u | comm -23 - sort.words
