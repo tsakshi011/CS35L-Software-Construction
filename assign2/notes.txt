@@ -1,0 +1,16 @@
+Exercise 2.1:
+1)Computing expression: (* (expt 2 (- 607 1)) ( - (expt 2 607) 1)) 
+2) Computing bits to represent this number: (+ (log (expt 2 (- 607 1)) 2) (log (- (expt 2 607) 1) 
+3) C-h k C-h k - C-h k runs the describe-key command - displays information regarding what the key binding does. 
+4) C-h k M-SPC - M-SPC runs the command cycle-spacing which basically adds a whitespace. If given an argument(optional) it adds the aforementioned number of white spaces.
+5) The general function for M-SPC is the just-one-space, which removes all the whitespace leaving only one space and its key binding is M-SPC.
+
+Exercise 2.3:
+1. When the script is invoked on an empty file like /dev/null returns an error that the IndexError list index is out of range as self.lines list is empty therefore unable to access any index resulting with the index out of range error.
+2. When invoking the script with Python3 rather than Python2 it returns the error on line except IOError as (errno, strerror): as invalid syntax because the correct format in Python3 would be to do except IOErrror as err and then call os.strerror(error.errno) to specifically extract errno(number) and strerror(string).
+3.When my shuf.py script is invoked using Python 2 rather than Python 3 it does not work as it runs into syntax errors regarding the print statements, in addition to ASCII/Unicode handling related problems
+4. 1) /usr/local/cs/bin/python3 - median of sys and user times = .513 seconds
+    2) /usr/bin/python3 - median of sys and user times = .502 seconds
+    3) /usr/local/cs/bin/shuf - median of sys and user times = 0.0683 seconds
+   CPU - Intel(R) Xeon(R) Silver 4116 CPU - 2.10GHz
+   Operating System Version - Red Hat Linux 8.5
