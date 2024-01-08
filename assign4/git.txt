@@ -1,0 +1,1 @@
+After cloning Git's git repository my repo has only one branch the master branch. After cd into the ~eggert/src/github/git repository and running git branch I found there to be 5 branches which are the following: main, master, next, seen, and todo. These are the differences between my repo and the one in ~eggert/src/github/git.
